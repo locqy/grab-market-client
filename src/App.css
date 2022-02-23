@@ -30,13 +30,29 @@ body,
 }
 
 #body {
-  height: 100vh;
+  min-height: 100vh;
   background-color: white;
-  width: 1024px;
+  max-width: 1024px;
+  width: 100%;
   margin: 0 auto;
   padding-bottom: 24px;
 }
 #footer {
   height: 200px;
   background-color: red;
+}
+
+@media screen and (max-width: 400px) {
+  .product-card {
+    width: 100px !important;
+  }
+  #header {
+    padding: 0 8px;
+  }
+  #body {
+    padding: 0 8px;
+  }
+  .ant-carousel {
+    margin: 0 -8px;
+  }
 }
